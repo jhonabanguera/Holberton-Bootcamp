@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume {
+    position: relative;
+    width: 100%;
+    max-width:  1000px;
+    min-height: 1000px;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 54px rgba(0,0,0,0.1);
+}
+
+.resume .resume_left {
+    position: relative;
+    background: #EEE8AA;
+    padding: 40px;
+}
+
+.resume_item_resume_info .title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.resume_left .resume_profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
