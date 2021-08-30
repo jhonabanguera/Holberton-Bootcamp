@@ -1,12 +1,20 @@
 document.getElementById("name").style.color = "Red";
 
 function cambiarFondo(elemento) {
-    if(elemento.style.backgroundColor == "black"){
+    /*if(elemento.style.backgroundColor == "black"){
         elemento.style.backgroundColor = "transparent";
     } else {
         elemento.style.backgroundColor = "black";
-    }
+    }*/
+   
+    var random_color = Math.floor(Math.random()*16777215).toString(16);
+    elemento.style.backgroundcolor = '#' + random_color;
 }
+
+setInterval(function(){
+    var random_color = Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("name").style.color = '#' + random_color;
+}, 1000);
 
 var textos = document.getElementsByClassName("info");
 

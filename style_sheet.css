@@ -41,7 +41,7 @@ body {
     position: relative;
     background: #fafa37;
     padding: 40px;
-
+    width: 300px;
 }
 .resume_item_resum_info .title {
     position: relative;
@@ -220,4 +220,9 @@ i {
 .resume_item_resume_work .box .info p{
     text-transform: uppercase;
 
+}
+
+#profile_image {
+    margin: 0 auto;
+    width: 200px;
 }
